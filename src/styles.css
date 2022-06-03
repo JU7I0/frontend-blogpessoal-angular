@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+header {
+    background-image: url(assets/Copia-de-arte-rua-grafitti-direitos-reservados.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
