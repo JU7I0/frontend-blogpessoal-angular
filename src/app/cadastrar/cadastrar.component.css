@@ -1,0 +1,9 @@
+form {
+    padding: 10px 30px 30px 30px;
+
+}
+
+.img {
+    background-image: url(../../assets/eduardo-kobra-mural-seja-luz.jpg);
+    background-size: cover;
+}
