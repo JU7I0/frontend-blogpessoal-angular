@@ -6,6 +6,8 @@
 
 .fst-pops {
     font-family: 'Poppins', sans-serif;
+    font-weight: 100;;
+    color: #ffffff;
 }
 
 .fst-pops:hover {
@@ -18,15 +20,3 @@ li {
     list-style-type: none;
 }
 
-#borda-texto {
-    font-family: Helvetica;
-    color: #FFF;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
-}
-
-.slogan {
-    text-shadow: 0 0 60px  rgb(0, 0, 0);
-    font-weight: 800;
-    font-family: 'Poppins', sans-serif;
-}

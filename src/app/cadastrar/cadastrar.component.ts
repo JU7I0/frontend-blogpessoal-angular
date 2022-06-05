@@ -11,11 +11,11 @@ import { AuthService } from '../service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
-    usuario: Usuario = new Usuario //variáveis acima dos costrutores
+    usuario: Usuario = new Usuario
     confirmarSenha: string
     tipoUsuario: string
   
-    //injeção de dependência. O módulo cadastrar DEPENDE do AuthService
+
     constructor(
       private authService: AuthService, 
       private router: Router
@@ -29,7 +29,7 @@ export class CadastrarComponent implements OnInit {
     this.confirmarSenha = event.target.value
   }
 
-  tipoDoUsuario(event: any) {
+  tipoUser(event: any) {
     this.tipoUsuario = event.target.value
 
   }
