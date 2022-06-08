@@ -6,7 +6,7 @@ body {
 }
 
 .caixa {
-    margin-top: 12%;
+    margin-top: 8%;
     background: rgba(228, 228, 228, 0);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 13.5px );
@@ -26,12 +26,14 @@ body {
 }
 
 .botaoEnviar:hover {
-    background-color: green;
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
     color: black;
 }
 
 .botaoCancelar:hover {
-    background-color: red;
+    background-color: #ffcb43;
+    background-image: linear-gradient(319deg, #ffcb43 0%, #ff6425 37%, #ff0016 100%);
     color: black;
 }
 

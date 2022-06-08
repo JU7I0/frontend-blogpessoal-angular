@@ -1,7 +1,7 @@
 <body>
     <div class="container d-flex justify-content-center">
         <div class="col-md-8 container-fluid p-0 caixa">
-            <h1 class="text-center m-2">CADASTRO</h1>
+            <h1 class="text-center mt-2">CADASTRO</h1>
             <form class="d-flex justify-content-center text-white mx-3 fs-16">
                 <div class="col-md-6 ">
                     <div class="form-group">
@@ -35,7 +35,7 @@
                         />
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 ">
                     <div class="form-group">
                         <label for="senha">Senha:</label>
                         <input
@@ -71,26 +71,27 @@
                     </div>
                 </div>
             </form>
-            <div class="d-flex justify-content-center mt-2 mb-4">
-                <button
-                type="submit"
-                class="btn botaoEstilo botaoCancelar mr-4"
-                routerLink="/entrar"
-                >
-                CANCELAR
-                </button>
-                <button
-                type="submit"
-                class="btn botaoEstilo botaoEnviar"
-                (click)="cadastrar()"
-                >
-                CADASTRAR
-                </button>
+            <div class="container-fluid d-flex flex-column">
+
+                <div class="form-group form-check text-center text-white">
+                    <input type="checkbox" class="form-check-input" name="">
+                    <label class="formchecklabel">Eu li e aceito os termos de uso e politicas de privacidade.</label>
+                </div>
+
+                <div class="row justify-content-center">
+                    <button
+                    type="submit"
+                    class="btn botaoEstilo botaoEnviar"
+                    (click)="cadastrar()"
+                    >
+                    CADASTRAR
+                    </button>
+                </div>
             </div>
         <hr class="my-3" />
-                <p class="text-center font-weight-bolder">
-                    Já tem uma conta? <a routerLink="/entrar">Faça login!</a>
-                </p>
+            <p class="text-center font-weight-bolder">
+                Já tem uma conta? <a routerLink="/entrar">Faça login!</a>
+            </p>
         </div>
     </div>
 </body>
