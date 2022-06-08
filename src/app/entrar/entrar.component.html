@@ -1,12 +1,12 @@
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center ">
-            <section class="col-12 col-sm-6 col-md-4 pt-5">
+            <section class="col-12 col-sm-6 col-md-4 pt-5 m-0">
                 <div class="d-flex justify-content-center mb-3">
                     <img src="../../assets/logo.jpg" alt="logo" class="bg">
                 </div>
-                <div id="borda">
-                <form>
+                <div class="caixa" id="borda">
+                <form class="col-md-10 m-auto">
                     <h4 class="text-center mt-4">Login</h4>
                     
                     <div class="form-group">
@@ -35,11 +35,11 @@
                         <label class="formchecklabel">Lembre-me</label>
                     </div>
 
-                    <button class="btn btn-dark btn-block" (click)="entrar()">Entrar</button>
+                    <button class="btn btn-dark btn-block rainbow-box" (click)="entrar()">Entrar</button>
                 </form> 
-                <hr class="mt-5 mb-5" />
-                <p class="text-center">
-                    Não tem uma conta? <a routerLink="/cadastrar">Cadastre-se</a>
+                <hr class="my-3" />
+                <p class="text-center font-weight-bolder">
+                    Não tem uma conta? <a class="cor" routerLink="/cadastrar">Cadastre-se</a>
                 </p>
                 </div>
             </section>
