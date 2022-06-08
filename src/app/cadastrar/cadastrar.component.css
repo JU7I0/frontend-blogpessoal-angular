@@ -1,9 +1,40 @@
-form {
-    padding: 10px 30px 30px 30px;
-
+body {
+    background-image: url('../../assets/parededamao.png');
+    background-size: cover;
+    background-position-x: center;
+    height: 100vh;
 }
 
-.img {
-    background-image: url(../../assets/eduardo-kobra-mural-seja-luz.jpg);
-    background-size: cover;
+.caixa {
+    margin-top: 12%;
+    background: rgba(228, 228, 228, 0);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 );  */
+}
+
+
+.botaoEstilo {
+    width: 45%;
+    background-color: #888888;
+    border: 1px solid  #8888885a;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    font-weight: bold;
+}
+
+.botaoEnviar:hover {
+    background-color: green;
+    color: black;
+}
+
+.botaoCancelar:hover {
+    background-color: red;
+    color: black;
+}
+
+.fs-16 {
+    font-size: 16pt;
 }
