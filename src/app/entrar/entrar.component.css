@@ -40,7 +40,17 @@ body {
     color: black;
     border: 1px transparent solid;
     font-weight: bolder;
-    background: linear-gradient(
+    background-color: #85B9EC;
+    background-image: radial-gradient(#85B9EC 0%, #0A1A48 74%);
+}
+
+
+
+
+/* 
+        GRADIENTE COLORIDO
+
+        background: linear-gradient(
         90deg,
         rgba(255, 0, 0, 1) 0%,
         rgba(255, 154, 0, 1) 10%,
@@ -53,5 +63,4 @@ body {
         rgba(186, 12, 248, 1) 80%,
         rgba(251, 7, 217, 1) 90%,
         rgba(255, 0, 0, 1) 100%
-    );
-}
+    ); */
