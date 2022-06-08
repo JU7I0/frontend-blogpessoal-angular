@@ -21,11 +21,11 @@
         <li class="nav-item">
             <a class="nav-link fst-pops fsz-10" href="#">ARTS</a>
         </li>
-        <!-- <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link fst-pops fsz-10" routerLink="/entrar" href="#"
             >LOGIN/CADASTRO</a
             >
-        </li> -->
+        </li>
         </div>
 
         <div class="ml-auto">
@@ -34,7 +34,7 @@
             <p class="m-0 font-weight-bolder text-white" >{{nome}}</p>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item active mr-4">
             <img
                 src="{{ foto }}"
                 alt="foto de perfil"
@@ -42,6 +42,10 @@
                 height="50px"
                 class="img-fluid rounded-circle"
             />
+            </li>
+
+            <li class="nav-item active">
+                <a (click)="sair()" class="font-weight-bold text-white">SAIR <i class="fa fa-sign-out" aria-hidden="true"></i></a>
             </li>
         </ul>
         </div>
