@@ -21,31 +21,36 @@
         <li class="nav-item">
             <a class="nav-link fst-pops fsz-10" href="#">ARTS</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link fst-pops fsz-10" routerLink="/entrar" href="#"
+        <li class="nav-item" *ngIf="!auth.logado()">
+            <a class="nav-link fst-pops fsz-10" routerLink="/entrar"
             >LOGIN/CADASTRO</a
             >
         </li>
+        <li class="nav-item" *ngIf="auth.logado()">
+            <a class="nav-link fst-pops fsz-10" routerLink="/inicio">
+                LINKS DE USUARIO
+            </a>
+        </li>
         </div>
 
-        <div class="ml-auto">
-        <ul class="navbar-nav d-flex align-items-center mr-4">
+        <div class="ml-auto" *ngIf="auth.logado()">
+        <ul class="navbar-nav d-flex align-items-center mr-4" >
             <li class="nav-item pr-3">
             <p class="m-0 font-weight-bolder text-white" >{{nome}}</p>
             </li>
 
-            <li class="nav-item active mr-4">
-            <img
-                src="{{ foto }}"
-                alt="foto de perfil"
-                width="50px"
-                height="50px"
-                class="img-fluid rounded-circle"
-            />
+            <li class="nav-item active mr-4" >
+                <img
+                    src="../../assets/caixinhadeleite.png"
+                    alt="foto de perfil"
+                    width="50px"
+                    height="50px"
+                    class="img-fluid rounded-circle" 
+                />
             </li>
 
             <li class="nav-item active">
-                <a (click)="sair()" class="font-weight-bold text-white">SAIR <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                <a  (click)="sair()" class="font-weight-bold text-white">SAIR <i class="fa fa-sign-out" aria-hidden="true"></i></a>
             </li>
         </ul>
         </div>

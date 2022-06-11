@@ -20,3 +20,6 @@ li {
     list-style-type: none;
 }
 
+header {
+    box-shadow: 0 40px 0 rgba( 31, 38, 135, 0.37 );
+}
