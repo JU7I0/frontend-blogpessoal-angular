@@ -21,6 +21,7 @@ usuarioLogin:UsuarioLogin = new UsuarioLogin()
   ngOnInit() {
     window.scroll(0,0)
   }
+
   entrar() {
     this.auth.entrar(this.usuarioLogin).subscribe({
         next: (resp: UsuarioLogin)=>{
@@ -30,13 +31,9 @@ usuarioLogin:UsuarioLogin = new UsuarioLogin()
         environment.foto = this.usuarioLogin.foto
         environment.id = this.usuarioLogin.id
 
-        /*console.log(environment.token)
-        console.log(environment.nome)
-        console.log(environment.foto)
-        console.log(environment.id)*/ //permite visualizar as informações do usuário no console do navegador
-
         this.router.navigate(['/inicio'])
       },
+      
       error: erro => {
         if(erro.status == 401) {
           alert('Atenção! Usuario ou senha incorretos.')
