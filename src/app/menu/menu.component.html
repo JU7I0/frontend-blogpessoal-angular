@@ -21,12 +21,7 @@
         <li class="nav-item">
             <a class="nav-link fst-pops fsz-10" href="#">ARTS</a>
         </li>
-        <li class="nav-item" *ngIf="!auth.logado()">
-            <a class="nav-link fst-pops fsz-10" routerLink="/entrar"
-            >LOGIN/CADASTRO</a
-            >
-        </li>
-        <li class="nav-item" *ngIf="auth.logado()">
+        <li class="nav-item">
             <a class="nav-link fst-pops fsz-10" routerLink="/inicio">
                 LINKS DE USUARIO
             </a>
@@ -41,7 +36,7 @@
 
             <li class="nav-item active mr-4" >
                 <img
-                    src="../../assets/caixinhadeleite.png"
+                    src={{foto}}
                     alt="foto de perfil"
                     width="50px"
                     height="50px"
