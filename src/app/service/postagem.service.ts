@@ -16,7 +16,7 @@ token = {
   constructor(private http: HttpClient) { }
 
   getAllPostagens(): Observable<Postagem[]> {
-    return this.http.get<Postagem[]>('https://julioblog.herokuapp.com/postagens/', this.token)
+    return this.http.get<Postagem[]>('https://julioblog.herokuapp.com/postagens', this.token)
   }
 
   getPostagemById(id: number): Observable<Postagem> {
@@ -24,11 +24,11 @@ token = {
   }
 
   postPostagem(postagem: Postagem): Observable<Postagem> {
-    return this.http.post<Postagem>('https://julioblog.herokuapp.com/postagens/', postagem, this.token)
+    return this.http.post<Postagem>('https://julioblog.herokuapp.com/postagens', postagem, this.token)
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem> {
-    return this.http.put<Postagem>('https://julioblog.herokuapp.com/postagens/', postagem, this.token)
+    return this.http.put<Postagem>('https://julioblog.herokuapp.com/postagens', postagem, this.token)
   }
 
   deletePostagem(id: number) {
