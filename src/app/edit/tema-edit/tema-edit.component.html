@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="container">
+        <h1>Editar tema</h1>
+
+        <form>
+        <div class="form-group">
+            <label for="">Descrição do tema</label>
+            <input type="text" name="tema" class="form-control" [(ngModel)]="tema.descricao">
+        </div>
+        <button class="btn btn-info w-25" (click)="editar()">Editar tema</button>
+        </form>
+    </div>
+</div>

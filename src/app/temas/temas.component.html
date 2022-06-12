@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="container">
+    <h1>Cadastro de temas</h1>
+
+    <form>
+      <div class="form-group">
+        <label for="">Descrição do tema</label>
+        <input type="text" name="tema" class="form-control" [(ngModel)]="tema.descricao">
+      </div>
+      <button class="btn btn-info w-25" (click)="cadastrar()">Cadastrar tema</button>
+    </form>
+
+    <hr>
+
+    <h2>Temas cadastrados</h2>
+
+    <ul>
+      <li *ngFor="let tema of listaTemas">{{tema.descricao}} <a [routerLink]="['/temaEdit', tema.id]" class="mr-3">Editar</a>
+        <a [routerLink]="['/temaDelete', tema.id]">Apagar</a> </li>
+    </ul>
+  </div>
+</div>
