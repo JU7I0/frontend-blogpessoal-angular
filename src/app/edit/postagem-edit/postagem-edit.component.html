@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="form-group">
+        <label for="">Titulo da postagem</label>
+        <input type="text" name="titulo" class="form-control" [(ngModel)]="postagem.titulo">
+    </div>
+    <div class="form-group">
+        <label for="">texto da postagem</label>
+        <textarea type="text" name="texto" rows="4" class="form-control" [(ngModel)]="postagem.texto"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="">tema da postagem</label>
+        <select name="tema" id="" class="form-control" [(ngModel)]="temaId" (change)="temaById()">
+        <option *ngFor="let tema of listaTemas" value="{{tema.id}}">{{tema.descricao}}</option>
+        </select>
+    </div>
+
+    <button routerLink="/inicio" class="btn btn-dark w-25">Cancelar</button>
+    <button (click)="editar()" class="btn btn-primary w-25">Editar</button>
+</div>

@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="container">
+    <h1>Apagar postagem</h1>
+    <hr>
+    <div class="col-md-8 border border-dark rounded my-2">
+      <h4>{{postagem.titulo}}</h4>
+      <span>{{postagem.tema.descricao}}</span>
+      <p>{{postagem.texto}}</p>
+      <small>{{postagem.data}}</small>
+      <p>{{postagem.usuario.nome}}</p>
+    </div>
+
+    <button class="btn btn-dark w-25" routerLink="/inicio">Cancelar</button>
+    <button class="btn btn-danger w-25" (click)="deletar()">Apagar</button>
+  </div>
+</div>
